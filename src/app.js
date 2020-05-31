@@ -10,7 +10,7 @@ const geocode= require('./Utils/geocode.js')
 const forecast = require('./Utils/forecast.js')
 
 //define paths for express config
-const publicDirPath=path.join(__dirname,'../public')
+const publicDirPath=path.join(__dirname,'../Public')
 const templateDirPath=path.join(__dirname,'../templates/views')
 const partialsDirPath=path.join(__dirname,'../templates/partials')
 
@@ -22,7 +22,7 @@ hbs.registerPartials(partialsDirPath)
 //set up to serve content from public directory
 app.use(express.static(publicDirPath))
 
-app.get('',(req,res)=> {
+app.get('/',(req,res)=> {
     res.render('index',{
         title : 'Weather report',
         name:'Utkarsh Goel'
