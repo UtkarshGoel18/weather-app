@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <link rel="icon" href="/images/icon.png">
+        <link rel="stylesheet" href="/CSS/style.css">
+        
+    </head>
+    <body>
+        
+        <div class="main-content">
+            {{>header}}
+            <div>
+                The web app to find status of you current weather forecast.<br>
+                Wanna get started? <br>
+                Jump on to the <span><a class="home" href="/">weather</a></span> page to start forecasting. 
+            </div>
+            <div class="potrait">
+                <a href="/help">
+                <img class="potrait" alt="My photo was here.😊" src='./Images/img.jpeg'>
+                </a>
+            And that is me,<br>
+            Wanna know more about me?<br>
+            Visit <span><a class="home" href="/help">help</a></span>
+            </div>
+
+            
+        </div>
+        <div class='ripple-background'>
+        <div class='circle xxlarge shade1'></div>
+        <div class='circle xlarge shade2'></div>
+        <div class='circle large shade3'></div>
+        <div class='circle mediun shade4'></div>
+        <div class='circle small shade5'></div>
+        </div>
+        {{>footer}}
+    </body>
+</html>
